@@ -1,0 +1,75 @@
+/**
+ * ============================================
+ * Game Screen Styles
+ * ============================================
+ */
+
+.game-screen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+
+.game-screen--cursor-visible {
+  cursor: auto;
+}
+
+/* ---- Crosshair ---- */
+.crosshair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.crosshair-dot {
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.crosshair-line {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.crosshair-top {
+  width: 2px;
+  height: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -18px;
+}
+
+.crosshair-bottom {
+  width: 2px;
+  height: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8px;
+}
+
+.crosshair-left {
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -18px;
+}
+
+.crosshair-right {
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+}

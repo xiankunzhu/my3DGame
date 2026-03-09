@@ -1,0 +1,161 @@
+/**
+ * ============================================
+ * HUD Styles
+ * ============================================
+ */
+
+.hud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  font-family: var(--font-mono);
+}
+
+/* ---- Health Bar (Top Center) ---- */
+.hud-health-container {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hud-health-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ef4444;
+  min-width: 24px;
+}
+
+.hud-health-bar {
+  width: 200px;
+  height: 16px;
+  background: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #555;
+}
+
+.hud-health-fill {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.hud-health-text {
+  font-size: 13px;
+  color: #ccc;
+  min-width: 55px;
+  text-align: right;
+}
+
+/* ---- Score Panel (Top Right) ---- */
+.hud-top-right {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hud-score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f59e0b;
+  margin-bottom: 4px;
+}
+
+.hud-kills {
+  font-size: 14px;
+  color: #ef4444;
+  margin-bottom: 2px;
+}
+
+.hud-time {
+  font-size: 14px;
+  color: #888;
+}
+
+/* ---- Weapon Panel (Bottom Right) ---- */
+.hud-weapon-panel {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  min-width: 120px;
+}
+
+.hud-weapon-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #eee;
+  margin-bottom: 6px;
+}
+
+.hud-ammo {
+  font-size: 14px;
+}
+
+.hud-ammo-count {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.hud-ammo-max {
+  font-size: 16px;
+  color: #666;
+}
+
+.hud-ammo-reserve {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+.hud-ammo-label {
+  font-size: 16px;
+  color: #888;
+}
+
+/* ---- Controls Hint (Bottom Left) ---- */
+.hud-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.6;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .hud-health-bar {
+    width: 120px;
+  }
+
+  .hud-controls {
+    display: none;
+  }
+
+  .hud-score {
+    font-size: 16px;
+  }
+}

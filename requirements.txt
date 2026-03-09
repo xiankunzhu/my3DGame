@@ -1,0 +1,33 @@
+1. create a small 3d game using unity or similar engine.
+2. use JS as the programming language.
+3. the player will have a health bar that decreases when attacked by enemies, and the game will end when the health reaches zero that is shown on the top of the screen.
+3. enemies will have a health bar that decreases when shot by the player, and they will be destroyed when their health reaches zero.
+3. the game will be a simple shooting game where the player can shoot at human enemies to survive
+4. the player will have a limited amount of ammo and can switch to a knife for close combat, but it will be less effective than shooting.
+5. it is a shotting game where the player shoots at human enemy to score points.
+6. the main player will walk on the ground
+7. enemies will spawn randomly and walk towards the player, trying to attack the player. The player must shoot or use the knife to defend themselves and survive as long as possible.
+7. add simple human 3D models and some blocks and textures.
+8. it will show guns and ammo, can switch knife and gun
+9. supplies will randomly spawn on the map, providing ammo or health boosts to the player.
+9. implement a basic UI for score display and game over screen.
+10. the game should be easy to understand and play.
+11. include comments in the code to explain key sections and logic.
+12. ensure the game runs smoothly on standard hardware.
+13. package the game for distribution on web platforms.
+14. provide documentation on how to set up and run the game.
+15. include a README file with instructions and credits.
+16. test the game for bugs and fix any issues that arise.
+17. optimize the game for performance and load times.
+18. consider adding sound effects and background music for better immersion.
+19. ensure the game is accessible to players with different skill levels.
+20. build a backend server to store high scores and player data.
+21. there is login and registration system for players.
+22. use a database to manage user accounts and game data.
+23. it is web app only (no mobile or desktop versions, may add those at future).
+24. use modern web technologies like HTML5 for rendering.
+25. use CSS3 for styling the game interface.
+26. use a JavaScript framework like React for building the UI components.
+27. implement responsive design to ensure the game works well on different screen sizes.
+28. use WebGL for rendering 3D graphics in the browser.
+29. ensure cross-browser compatibility for major browsers like Chrome, Firefox, and Edge.

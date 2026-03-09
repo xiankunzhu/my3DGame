@@ -1,0 +1,155 @@
+/**
+ * ============================================
+ * Main Menu Styles
+ * ============================================
+ */
+
+.main-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a0f 70%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---- Animated background ---- */
+.menu-bg-particles {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(233, 69, 96, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(15, 52, 96, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(233, 69, 96, 0.05) 0%, transparent 50%);
+  animation: bgPulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes bgPulse {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.menu-content {
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+}
+
+/* ---- Title ---- */
+.menu-title {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  line-height: 1.1;
+  margin-bottom: 12px;
+  text-shadow: 0 0 40px rgba(233, 69, 96, 0.3);
+}
+
+.title-accent {
+  color: var(--color-primary);
+  font-size: 5rem;
+}
+
+.title-sub {
+  font-size: 3rem;
+  color: var(--color-text-muted);
+  letter-spacing: 12px;
+}
+
+.menu-tagline {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* ---- Buttons ---- */
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.menu-btn {
+  min-width: 260px;
+}
+
+/* ---- Auth Section ---- */
+.menu-auth {
+  margin-top: 20px;
+}
+
+.menu-user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.menu-welcome {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.menu-auth-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-btn-small {
+  padding: 8px 20px;
+  font-size: 0.85rem;
+}
+
+.menu-auth-hint {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* ---- Footer ---- */
+.menu-footer {
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .menu-title {
+    font-size: 2.5rem;
+  }
+
+  .title-accent {
+    font-size: 3rem;
+  }
+
+  .title-sub {
+    font-size: 1.8rem;
+    letter-spacing: 6px;
+  }
+
+  .menu-btn {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 2rem;
+  }
+
+  .title-accent {
+    font-size: 2.5rem;
+  }
+
+  .title-sub {
+    font-size: 1.4rem;
+  }
+}
